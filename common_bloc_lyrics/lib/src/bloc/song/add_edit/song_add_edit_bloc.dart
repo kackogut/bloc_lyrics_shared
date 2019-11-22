@@ -1,8 +1,6 @@
 import 'dart:async';
 
 import 'package:bloc/bloc.dart';
-import 'package:flutter_bloc_lyrics/feature/song/add_edit/bloc/song_add_edit_event.dart';
-import 'package:flutter_bloc_lyrics/feature/song/add_edit/bloc/song_add_edit_state.dart';
 import 'package:common_bloc_lyrics/common_bloc_lyrics.dart';
 import 'package:meta/meta.dart';
 

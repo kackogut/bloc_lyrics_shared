@@ -1,10 +1,6 @@
 import 'dart:async';
 
 import 'package:bloc/bloc.dart';
-import 'package:flutter_bloc_lyrics/common/constants.dart';
-import 'package:flutter_bloc_lyrics/feature/song/add_edit/bloc/song_add_edit.dart';
-import 'package:flutter_bloc_lyrics/feature/song/search/bloc/songs_search_event.dart';
-import 'package:flutter_bloc_lyrics/feature/song/search/bloc/songs_search_state.dart';
 import 'package:common_bloc_lyrics/common_bloc_lyrics.dart';
 import 'package:meta/meta.dart';
 import 'package:rxdart/rxdart.dart';
