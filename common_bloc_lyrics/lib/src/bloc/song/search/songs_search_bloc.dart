@@ -65,9 +65,10 @@ class SongsSearchBloc extends Bloc<SongSearchEvent, SongsSearchState> {
         final result = await lyricsRepository.searchSongs(searchQuery);
         yield SearchStateSuccess(result, searchQuery);
       } catch (error) {
+        print(error.toString());
         yield error is SearchResultError
             ? SearchStateError(error.message)
-            : SearchStateError("Default error");
+            : SearchStateError(error.toString());
       }
     }
   }
