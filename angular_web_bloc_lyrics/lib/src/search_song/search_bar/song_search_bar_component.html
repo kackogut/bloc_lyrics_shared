@@ -1,0 +1,8 @@
+<label for="term" class="clip">Enter song title</label>
+<input
+  id="term"
+  placeholder="Enter song title"
+  class="input-reset outline-transparent glow o-50 bg-near-black near-white w-100 pv2 border-box b--white-50 br-0 bl-0 bt-0 bb-ridge mb3"
+  autofocus
+  (keyup)="onTextChanged($event.target.value)"
+/>

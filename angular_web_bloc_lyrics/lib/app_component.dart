@@ -1,16 +1,17 @@
 import 'package:angular/angular.dart';
 
-import 'src/todo_list/todo_list_component.dart';
-
-// AngularDart info: https://webdev.dartlang.org/angular
-// Components info: https://webdev.dartlang.org/components
+import 'package:common_bloc_lyrics/common_bloc_lyrics.dart';
+import 'package:flutter_web_bloc_lyrics/src/search_song/search_song_component.dart';
 
 @Component(
   selector: 'my-app',
-  styleUrls: ['app_component.css'],
-  templateUrl: 'app_component.html',
-  directives: [TodoListComponent],
+  template:
+      '<search-form [githubRepository]="githubRepository"></search-form>',
+  directives: [SearchSongComponent],
 )
 class AppComponent {
-  // Nothing here yet. All logic is in TodoListComponent.
+  final githubRepository = LyricsRepository(
+    LyricsClient(),
+    LocalClient()
+  );
 }
