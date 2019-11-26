@@ -1,7 +1,7 @@
 import 'package:angular/angular.dart';
 
 import 'package:common_bloc_lyrics/common_bloc_lyrics.dart';
-import 'package:flutter_web_bloc_lyrics/src/search_song/search_song_component.dart';
+import 'package:angular_web_bloc_lyrics/src/search_song/search_song_component.dart';
 
 @Component(
   selector: 'my-app',

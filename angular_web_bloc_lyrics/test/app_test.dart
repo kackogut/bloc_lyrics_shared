@@ -1,8 +1,8 @@
 @TestOn('browser')
 import 'package:angular_test/angular_test.dart';
 import 'package:test/test.dart';
-import 'package:flutter_web_bloc_lyrics/app_component.dart';
-import 'package:flutter_web_bloc_lyrics/app_component.template.dart' as ng;
+import 'package:angular_web_bloc_lyrics/app_component.dart';
+import 'package:angular_web_bloc_lyrics/app_component.template.dart' as ng;
 
 void main() {
   final testBed =
