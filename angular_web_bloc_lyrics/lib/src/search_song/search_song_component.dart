@@ -25,6 +25,7 @@ class SearchSongComponent implements OnInit, OnDestroy {
   void ngOnInit() {
     songsSearchBloc = SongsSearchBloc(
       lyricsRepository: lyricsRepository,
+      songAddEditBloc: SongAddEditBloc(lyricsRepository: lyricsRepository)
     );
   }
 

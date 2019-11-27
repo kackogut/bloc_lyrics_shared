@@ -6,11 +6,11 @@ import 'package:angular_web_bloc_lyrics/src/search_song/search_song_component.da
 @Component(
   selector: 'my-app',
   template:
-      '<search-form [githubRepository]="githubRepository"></search-form>',
+      '<search-form [lyricsRepository]="lyricsRepository"></search-form>',
   directives: [SearchSongComponent],
 )
 class AppComponent {
-  final githubRepository = LyricsRepository(
+  final lyricsRepository = LyricsRepository(
     LyricsClient(),
     LocalClient()
   );

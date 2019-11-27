@@ -1,5 +1,6 @@
 import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
+import 'package:angular_web_bloc_lyrics/src/search_song/search_results/song_search_results_component.dart';
 
 import 'package:common_bloc_lyrics/common_bloc_lyrics.dart';
 
@@ -9,7 +10,8 @@ import 'package:common_bloc_lyrics/common_bloc_lyrics.dart';
   directives: [
     coreDirectives,
     MaterialSpinnerComponent,
-    MaterialIconComponent
+    MaterialIconComponent,
+    SearchResultsComponent
   ],
 )
 class SearchBodyComponent {
